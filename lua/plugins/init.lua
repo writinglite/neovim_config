@@ -30,5 +30,16 @@ return require('packer').startup(function(use)
   --hightlight
   use 'nvim-treesitter/nvim-treesitter'
 
+  -- nvim-treesitter
+  use {'kyazdani42/nvim-tree.lua', requires = {'kyazdani42/nvim-web-devicons'}, run=":TSUpdate"}
+
+  -- file tree
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+  }
+
 
 end)

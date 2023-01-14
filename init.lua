@@ -1,7 +1,10 @@
+require("core.options")
 require('plugins')
 require("mason").setup()
 require('plugins/cmp')
 require("plugins.vscode")
+require("plugins.bufferline")
+require("plugins.nvim-tree")
 
 vim.api.nvim_create_autocmd("Filetype", {
   pattern = "java", -- autocmd to start jdtls
